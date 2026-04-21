@@ -1,0 +1,98 @@
+# Virtual Environment 🚫
+# This folder is like a special sandbox - don't upload it!
+# Others can create their own with: python -m venv venv
+venv/
+ENV/
+env/
+
+# Python Cache Files 🗑️
+# These are temporary files Python creates - don't need them
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Database 🗄️
+# Contains user accounts and private data - NEVER upload!
+db.sqlite3
+*.db
+
+# Media Files 📁
+# Uploaded files by users - keep these private
+media/
+uploads/
+
+# Uploaded Log Files
+/media/logs/
+
+# Environment Variables 🔐
+# Contains SECRET_KEY and passwords - NEVER upload!
+.env
+.env.local
+.env.*.local
+
+# Django Settings 🚫
+# NEVER upload settings.py - contains SECRET_KEY!
+network_log_analyzer/settings.py
+
+# IDE Settings 💻
+# Settings for VS Code, PyCharm, etc. - not needed
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs 📝
+# System log files
+*.log
+logs/
+
+# Temporary Files ⏰
+tmp/
+temp/
+*.tmp
+
+# OS Files 🖥️
+# Created by Windows/Mac - don't need these
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Static Files 📦
+# Collected static files (if you run collectstatic)
+/staticfiles/
+/static/
+
+# Testing 🧪
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Installation Files 📦
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Secrets 🔑
+secrets.json
+config.json
+
+# IDE Python debugger 🐛
+.python-version

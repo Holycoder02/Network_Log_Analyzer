@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Upload Log</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <!--Adding nav--->
+        <nav class="navbar-dark bg-dark px-4">
+            <span class="navbar-brand">🔍Network Log Analyzer</span>
+            <div>
+                <span class="text-white me-3">{{ request.user.username }}</span>
+                <a href="{% url 'logout' %}" class="btn btn-outline-light btn btn-sm">Logout</a>
+            </div>
+        </nav>
+        <div class="container mt-5">
+        <h2>Upload Log File</h2>
+        {% if error %}
+        <div class="alert alert-danger">{{ error }}</div>
+        {% endif %}
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="mb-3">
+                <input type="file" name="log_file" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Upload</button>
+        </form>
+        </div>
+    </body>
+</html>
